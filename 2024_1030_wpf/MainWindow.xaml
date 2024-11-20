@@ -8,17 +8,13 @@
         mc:Ignorable="d"
         Title="2024 WPF Painter ver1" Height="450" Width="964">
     <DockPanel LastChildFill="False">
-        <Menu Height="30"  DockPanel.Dock="Top">
-
+        
+        <Menu Height="30" DockPanel.Dock="Top">
             <MenuItem Header="檔案" FontSize="14" Height="28" VerticalAlignment="Center">
-                <MenuItem Header="開新檔案" FontSize="14" Height="28" VerticalAlignment="Center"/>
-                <MenuItem Header="開啟舊檔" FontSize="14" Height="28" VerticalAlignment="Center"/>
-                <MenuItem Header="儲存檔案" FontSize="14" Height="28" VerticalAlignment="Center"/>
-                <MenuItem Header="另存新檔" FontSize="14" Height="28" VerticalAlignment="Center"/>
-                <MenuItem Header="結束" FontSize="14" Height="28" VerticalAlignment="Center"/>
+                <MenuItem x:Name="SaveCanvasMenuItem" Header="儲存檔案" FontSize="14" Height="28" VerticalAlignment="Center" Click="SaveCanvasMenuItem_Click"/>
             </MenuItem>
-
         </Menu>
+        
         <ToolBarTray Height="40" DockPanel.Dock="Top">
             <ToolBar Height="38" Background="#FFF9D5C0" Margin="0,0,9,0">
                 <Label Content="筆刷色彩" Width="65" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="14"/>
